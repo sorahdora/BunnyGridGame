@@ -1,0 +1,281 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff7e6;
+  color: rgb(51, 51, 51);
+}
+
+/* Header box with background screenshot */
+.game-header {
+  position: relative;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: #FFB300;
+}
+
+/* Background image layer */
+.game-header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("BunnyGridGameScreenshot.png");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.45;
+  z-index: 0;
+}
+
+/* Game title text */
+.game-header h1 {
+  position: relative;
+  z-index: 1;
+  color: white;
+  font-size: 48px;
+  text-align: center;
+  margin: 0;
+}
+
+/* Navigation bar */
+nav {
+  background-color: #FFB300;
+  text-align: center;
+  padding: 15px;
+}
+
+/* Navigation links */
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 18px;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+/* Mouse hover effect */
+nav a:hover {
+  background-color: white;
+  color: #8a5a00;
+}
+
+/* Main content area */
+main {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* Each section box */
+section {
+  background-color: white;
+  margin-bottom: 30px;
+  padding: 25px;
+  border-radius: 12px;
+  border: 2px solid #ffd36b;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Section titles */
+section h2 {
+  margin-top: 0;
+  color: #cc7a00;
+}
+
+/* Paragraph text */
+section p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Screenshot layout */
+.screenshot-row {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 35px;
+}
+
+/* Left side text */
+.screenshot-text {
+  flex: 1;
+}
+
+/* Screenshot subtitles */
+.screenshot-text h3 {
+  color: rgb(51, 51, 51);
+  margin-bottom: 10px;
+}
+
+/* Right side image */
+.screenshot-image {
+  flex: 1;
+}
+
+.screenshot-image img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Info and Download combined box */
+.info-download-box {
+  display: flex;
+  gap: 30px;
+  background-color: white;
+  padding: 25px;
+  border-radius: 8px;
+  align-items: flex-start;
+}
+
+/* Left side: More Info */
+.more-info-column {
+  flex: 1;
+}
+
+/* Right side: Download */
+.download-column {
+  flex: 1;
+}
+
+.more-info-column h3,
+.download-column h3 {
+  margin-top: 0;
+  color: rgb(51, 51, 51);
+}
+
+.more-info-column p,
+.download-column p {
+  font-size: 17px;
+  margin: 10px 0;
+}
+
+/* Download clickable box */
+.download-card {
+  display: block;
+  background-color: #FFB300;
+  color: white;
+  text-decoration: none;
+  padding: 22px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Download box hover effect */
+.download-card:hover {
+  background-color: #cc7a00;
+  transform: translateY(-2px);
+}
+
+/* Big text inside download box */
+.download-title {
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+/* Small text inside download box */
+.download-text {
+  display: block;
+  font-size: 16px;
+}
+
+/* Text under download box */
+.download-note {
+  font-size: 16px;
+  text-align: center;
+  margin-top: 12px;
+  color: rgb(51, 51, 51);
+}
+
+/* Developer list layout */
+.developer-list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 18px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Developer profile layout */
+.developer-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 130px;
+  text-align: center;
+}
+
+/* Developer photo */
+.developer-image img {
+  width: 115px;
+  height: 115px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Developer introduction */
+.developer-info h3 {
+  margin-top: 12px;
+  margin-bottom: 6px;
+  color: rgb(51, 51, 51);
+  font-size: 18px;
+}
+
+.developer-info p {
+  font-size: 15px;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Team photo under developer cards */
+.team-photo {
+  margin-top: 35px;
+  text-align: center;
+}
+
+.team-photo h3 {
+  color: rgb(51, 51, 51);
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.team-photo img {
+  width: 100%;
+  max-width: 650px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.team-photo p {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+/* Make layouts stack on smaller screens */
+@media (max-width: 700px) {
+  .screenshot-row,
+  .info-download-box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .developer-list {
+    flex-wrap: wrap;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 6px;
+  }
+
+  .game-header h1 {
+    font-size: 36px;
+  }
+}
