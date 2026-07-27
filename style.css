@@ -22,7 +22,7 @@ body {
   position: absolute;
   inset: 0;
   background-image: url("background_1.jpg");
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
