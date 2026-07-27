@@ -21,7 +21,7 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("BunnyGridGameScreenshot.png");
+  background-image: url("background_1.jpg");
   background-size: cover;
   background-position: center;
   opacity: 0.45;
